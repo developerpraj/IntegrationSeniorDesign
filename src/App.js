@@ -53,10 +53,11 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#ffff",
-    position:'relative',
+    position:'center',
     border:'solid',
     borderColor: "#D4AF37",
-    marginLeft:'550px',
+    marginLeft:"600px",
+    marginTop:"100px"
   
     
   }
@@ -88,9 +89,8 @@ export default function FullWidthTabs() {
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab label="Login " {...a11yProps(0)} />
-          <Tab label="Register" {...a11yProps(1)} />
-    
+          <Tab label="Login With O365 " {...a11yProps(0)} />
+      
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -100,9 +100,6 @@ export default function FullWidthTabs() {
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
           <Login />
-        </TabPanel>
-        <TabPanel value={value} index={1} dir={theme.direction}>
-          <Register />
         </TabPanel>
       </SwipeableViews>
     </div>
