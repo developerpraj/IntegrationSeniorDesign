@@ -13,6 +13,7 @@ import Box from '@material-ui/core/Box';
 
 
 import Login from './components/signin'
+//something wrong with the css, css wont work if we remove it..Need some refactoring
 import Register from './components/register'
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
